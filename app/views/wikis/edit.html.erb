@@ -13,7 +13,7 @@
     <% if policy(@wiki).make_private? %>
       <div class='form-group'>
         <%= f.label :public, class: 'checkbox' do %>
-          <%= f.check_box :public %> Public wiki
+          <%= f.check_box :public, {}, false, true %> Make wiki private
         <% end %>
       </div>
     <% end %>
