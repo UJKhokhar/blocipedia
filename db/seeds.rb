@@ -12,7 +12,7 @@ require 'faker'
 end
 
 ## Create admin user for testing
-umar = User.create!(
+umar = User.new(
   name: 'Umar Khokhar',
   email: 'ujkhokhar@gmail.com',
   password: 'helloworld',
